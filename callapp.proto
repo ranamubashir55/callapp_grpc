@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service CallApp{
+    rpc GetCallAppData(CallAppQuery) returns (CallAppResponse){}
+}
+
+message CallAppQuery{
+    string query=1;
+}
+
+message CallAppResponse{
+    string response=1;
+}
