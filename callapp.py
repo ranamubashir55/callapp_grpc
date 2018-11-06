@@ -63,5 +63,5 @@ class CallApp():
                 dist["email"]=email
         except Exception:
             dist["email"]=""            
-        return dist
+        return {"data":[dist]}
             
